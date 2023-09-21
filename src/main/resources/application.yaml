@@ -1,0 +1,25 @@
+server :
+  port: 9191
+
+spring:
+  datasource:
+    drive-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/muruga
+    username: root
+    password: root
+
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    propreties:
+      hibernate:
+         dailect: org.hibernate.dialect.MYSQL5Dialect
+
+
+  logging:
+      level:
+        root: DEBUG
+
+
