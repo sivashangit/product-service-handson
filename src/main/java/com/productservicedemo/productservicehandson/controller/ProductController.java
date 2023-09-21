@@ -32,7 +32,7 @@ public class ProductController {
     @GetMapping("/product/{productid}")
     public ResponseEntity<?> getproductByid(@PathVariable int productid){
 
-        //return new ResponseEntity<>(productservice.getProductByid(productid), HttpStatus.OK);
+        //return new ResponseEntity<>(productservice.getProductByid(productid), HttpStatus.OK) test;
         logger.info("ProductController.getproductByid execution started....");
         Product product=productservice.getProductByid(productid);
         APIResponse<Product> response=APIResponse
